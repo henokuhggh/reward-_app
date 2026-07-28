@@ -14,11 +14,6 @@ export default function HomeScreen({ user, onNavigate, onOpenAdmin }) {
         )}
       </header>
 
-      {/* TEMPORARY DEBUG - remove once admin button issue is confirmed fixed */}
-      <p style={{ fontSize: '10px', color: '#5f6f95', fontFamily: 'monospace' }}>
-        debug: telegram_id={user?.telegram_id} is_admin={String(user?.is_admin)}
-      </p>
-
       <BalanceCard balance={user?.balance} />
 
       <div className="quick-actions">

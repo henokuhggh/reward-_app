@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap');
+
+:root {
+  /* Ink navy, deep and cold - the card body color */
+  --ink-950: #06122b;
+  --ink-900: #0a1a3d;
+  --ink-800: #122456;
+  --ink-700: #1c3170;
+
+  /* Metallic gold sweep - the card's foil accent */
+  --gold-400: #f0d492;
+  --gold-500: #e0b854;
+  --gold-600: #b8863a;
+
+  /* Silver / chrome secondary accent */
+  --silver-300: #dfe6ef;
+  --silver-500: #9fb0c9;
+
+  --success: #3ecf8e;
+  --danger: #e5637a;
+
+  --text-primary: #f4f7fc;
+  --text-secondary: #94a3c4;
+  --text-muted: #5f6f95;
+
+  --surface-0: #060d1f;
+  --surface-1: #0e1a38;
+  --surface-2: #14224a;
+  --surface-border: rgba(159, 176, 201, 0.14);
+
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 9px;
+
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--surface-0);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+input, select {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

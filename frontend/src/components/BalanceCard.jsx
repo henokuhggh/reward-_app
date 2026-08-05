@@ -25,7 +25,7 @@ export default function BalanceCard({ balance, signupBonus }) {
         <div className="bonus-row">
           <span className="bonus-label">Bonus credit</span>
           <span className="bonus-amount">{bonusFormatted} ETB</span>
-          <span className="bonus-note">usable for products, not withdrawable</span>
+          <span className="bonus-note">usable to join Bingo rounds, not withdrawable until you win a game</span>
         </div>
       )}
       <div className="card-bottom">
